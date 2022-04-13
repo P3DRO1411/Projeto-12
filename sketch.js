@@ -29,19 +29,17 @@ function draw() {
   background(0);
   
   // boy moving on Xaxis with mouse'
-  rabbit.x = World.mouseX;
+  rabbit.x = mouseX;
   
   edges= createEdgeSprites();
   rabbit.collide(edges);
   
+
    drawSprites();
    
   
-  var select_sprites = Math(random(1,3));
 
-  var select_sprites = Math.random(random(1,3));
-
-   var select_sprites = Math.round(1,3);
+ 
 
    var select_sprites = Math.round(random(1,3));
 
@@ -90,7 +88,7 @@ function draw() {
 
 function createApples() {
 apple = createSprite(random(50, 350),40, 10, 10);
-apple.addImage(appleImg);
+apple.addImage("maça",appleImg);
 apple.scale=0.07;
 apple.velocityY = 3;
 apple.lifetime = 150;
@@ -99,7 +97,7 @@ apple.lifetime = 150;
 
 function createOrange() {
 orangeL = createSprite(random(50, 350),40, 10, 10);
-orangeL.addImage(orangeImg);
+orangeL.addImage("laranja",orangeImg);
 orangeL.scale=0.08;
 orangeL.velocityY = 3;
 orangeL.lifetime = 150;
@@ -107,7 +105,7 @@ orangeL.lifetime = 150;
 
 function createRed() {
 redL = createSprite(random(50, 350),40, 10, 10);
-redL.addImage(redImg);
+redL.addImage("vermelho",redImg);
 redL.scale=0.06;
   redL.velocityY = 3;
   redL.lifetime = 150;
